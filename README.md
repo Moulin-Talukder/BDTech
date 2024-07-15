@@ -1,78 +1,102 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+# BDTech
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+BDTech is a comprehensive solution designed to manage inventory, accounting, and HRM for both wholesale and retail business models. This software is fully responsive and user-friendly, making it ideal for any super shop.
 
-## About Laravel
+## Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- Inventory Management
+- POS System
+- HRM and Payroll Management
+- Accounting and Financial Reporting
+- Multi-language Support
+- Email Notifications
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Server Requirements
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Preferred Server**: Apache/Nginx
+- **PHP Version**: >= 7.1
+- **Extensions**: OpenSSL, PDO, Fileinfo, Mbstring, Tokenizer, Zip Archive
+- **Mod Rewrite**: Enabled
 
-## Learning Laravel
+## Installation
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+1. **Upload Files**: Upload the `bdtech.zip` file to your server and extract it.
+2. **Database Setup**: Create a database in phpMyAdmin and import `bdtech.sql` from the `dbBackup` folder.
+3. **Connect Database**: Open the `.env` file and update the `DB_DATABASE`, `DB_USERNAME`, and `DB_PASSWORD` values.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Installation Video
 
-## Laravel Sponsors
+Watch the [installation video](https://youtube.com) for detailed steps.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Common Errors
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
+- **500 Server Error**: Update PHP to version 7.3 or later and set `APP_DEBUG` to `true` in the `.env` file to see the actual error.
 
-## Contributing
+## Software Update
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Update with Existing Data
 
-## Code of Conduct
+1. Rename your previous database.
+2. Delete the project folder and reinstall it.
+3. Merge your databases using MySQL Compare or Navicat.
+4. Rename the database back to the original name.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Update without Existing Data
 
-## Security Vulnerabilities
+1. Delete your previous database.
+2. Delete the project folder and reinstall it.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## POS Printer Configuration
 
-## License
+1. Install your printer driver.
+2. Set the printer as default in your system settings.
+3. Configure the paper size and other settings.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Setup Mail Server
+
+Fill in the required information under Mail Setting in the Setting module.
+
+## Modules and Features
+
+### Dashboard
+
+Provides a summary of revenue, sale returns, purchase returns, and profits. It includes various charts and recent transaction details.
+
+### Product Management
+
+- **Category**: Add, edit, delete, import, and export categories.
+- **Product**: Add, edit, delete, import, and export products. Supports standard, digital, and combo products.
+
+### Stock Management
+
+Add stock through the purchase module and manage stock levels automatically.
+
+### Sales Management
+
+- **POS**: Create sales, manage orders, and send confirmation emails to customers.
+- **Payment**: Accept various payment methods including cash, card, and PayPal.
+
+### Expense Management
+
+Create, edit, delete, and manage expense categories and records.
+
+### HRM
+
+- **Department and Employee Management**: Create, edit, delete departments and employees, manage attendance, and payroll.
+
+### Reports
+
+Generate various reports including profit/loss, best seller, product reports, and more.
+
+### Settings
+
+Manage roles, warehouses, customer groups, brands, units, taxes, and general settings. Set up SMS and email notifications.
+
+## Support
+
+For support, installation, and customization, please contact us at [support@BDTech.com](mailto:support@bdtech.com). We are committed to providing the best support to ensure your success.
+
+---
+
+With best wishes,  
+LionCoders
