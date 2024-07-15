@@ -24,9 +24,6 @@ BDTech is a comprehensive solution designed to manage inventory, accounting, and
 2. **Database Setup**: Create a database in phpMyAdmin and import `bdtech.sql` from the `dbBackup` folder.
 3. **Connect Database**: Open the `.env` file and update the `DB_DATABASE`, `DB_USERNAME`, and `DB_PASSWORD` values.
 
-### Installation Video
-
-Watch the [installation video](https://youtube.com) for detailed steps.
 
 ## Common Errors
 
