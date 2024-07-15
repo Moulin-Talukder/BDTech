@@ -95,8 +95,3 @@ Manage roles, warehouses, customer groups, brands, units, taxes, and general set
 ## Support
 
 For support, installation, and customization, please contact us at [support@BDTech.com](mailto:support@bdtech.com). We are committed to providing the best support to ensure your success.
-
----
-
-With best wishes,  
-LionCoders
